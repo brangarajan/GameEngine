@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3167A812-5D2C-4EE9-ACFD-F0E959384755}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>spinnycube</RootNamespace>
+    <ProjectName>Engine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)../Libs/GLFW/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)lib\GLFW\include;$(SolutionDir)lib\SB6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_Release</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Libs\GLFW\include;$(SolutionDir)..\Libs\Math\include;$(SolutionDir)..\Libs\File\include;$(SolutionDir)..\Libs\SB6\include;$(SolutionDir)..\Libs\PCSTree\include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Libs\GLFW\include;$(SolutionDir)..\Libs\SB6\include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicConeModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="BasicCubeModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="ConeModel.cpp" />
+    <ClCompile Include="CubeModel.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameContent.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="BasicIcoModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GameObjectManager.cpp" />
+    <ClCompile Include="IcoModel.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="ModelManager.cpp" />
+    <ClCompile Include="PointLightTexturedCube.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="PyramidModel.cpp" />
+    <ClCompile Include="RenderObject.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="BasicPyramidModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RenderMethod.cpp" />
+    <ClCompile Include="RM_ColorByPosition.cpp" />
+    <ClCompile Include="RM_PointLightTexture.cpp" />
+    <ClCompile Include="RM_SingleColor.cpp" />
+    <ClCompile Include="RM_Texture.cpp" />
+    <ClCompile Include="RM_Wireframe.cpp" />
+    <ClCompile Include="RO_ColorByPosition.cpp" />
+    <ClCompile Include="RO_PointLightTexture.cpp" />
+    <ClCompile Include="RO_SingleColor.cpp" />
+    <ClCompile Include="RO_Texture.cpp" />
+    <ClCompile Include="RO_Wireframe.cpp" />
+    <ClCompile Include="ShaderLoader.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="TexturedCubeModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TexturedPyramidModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TextureNode.cpp" />
+    <ClCompile Include="TGATexture.h" />
+    <ClCompile Include="TextureManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Libs\File\include\File.h" />
+    <ClInclude Include="..\..\..\Libs\GLFW\include\GL\glfw.h" />
+    <ClInclude Include="..\..\..\Libs\Math\include\MathEngine.h" />
+    <ClInclude Include="..\..\..\Libs\PCSTree\include\PCSNode.h" />
+    <ClInclude Include="..\..\..\Libs\PCSTree\include\PCSTree.h" />
+    <ClInclude Include="..\..\..\Libs\SB6\include\sb6.h" />
+    <ClInclude Include="..\..\..\Libs\SB6\include\sb6ext.h" />
+    <ClInclude Include="..\..\..\Libs\SB6\include\sb6ktx.h" />
+    <ClInclude Include="..\..\..\Libs\SB6\include\sb6mfile.h" />
+    <ClInclude Include="BasicConeModel.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="BasicCubeModel.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="ConeModel.h" />
+    <ClInclude Include="CubeModel.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="EngineSetup.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameContent.h" />
+    <ClInclude Include="GameIncludes.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="BasicIcoModel.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="IcoModel.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="KeyMapping.h" />
+    <ClInclude Include="ModelList.h" />
+    <ClInclude Include="ModelManager.h" />
+    <ClInclude Include="Model_Includes.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="PointLightTexturedCube.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="PyramidModel.h" />
+    <ClInclude Include="RenderObject.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="BasicPyramidModel.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RenderMethod.h" />
+    <ClInclude Include="RM_ColorByPosition.h" />
+    <ClInclude Include="RM_PointLightTexture.h" />
+    <ClInclude Include="RM_SingleColor.h" />
+    <ClInclude Include="RM_Texture.h" />
+    <ClInclude Include="RM_Wireframe.h" />
+    <ClInclude Include="RO_ColorByPosition.h" />
+    <ClInclude Include="RO_Includes.h" />
+    <ClInclude Include="RO_PointLightTexture.h" />
+    <ClInclude Include="RO_SingleColor.h" />
+    <ClInclude Include="RO_Texture.h" />
+    <ClInclude Include="RO_Wireframe.h" />
+    <ClInclude Include="ShaderLoader.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="TexturedCubeModel.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="TexturedPyramidModel.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="TextureNode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\Libs\File\lib\File_Debug.lib" />
+    <Library Include="..\..\..\Libs\GLFW\lib\GLFW_Debug.lib" />
+    <Library Include="..\..\..\Libs\Math\lib\MathEngineDebug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\..\..\Libs\Math\lib\MathEngineRelease.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\..\..\Libs\PCSTree\lib\PCSTree_Debug.lib" />
+    <Library Include="..\..\..\Libs\SB6\lib\sb6_Debug.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Shaders\ColorByPos.frag.glsl" />
+    <None Include="..\..\..\Shaders\ColorByPos.vert.glsl" />
+    <None Include="..\..\..\Shaders\PointLightTex.frag.glsl" />
+    <None Include="..\..\..\Shaders\PointLightTex.vert.glsl" />
+    <None Include="..\..\..\Shaders\SimpleTexture.frag.glsl" />
+    <None Include="..\..\..\Shaders\SimpleTexture.vert.glsl" />
+    <None Include="..\..\..\Shaders\SingleColor.frag.glsl" />
+    <None Include="..\..\..\Shaders\SingleColor.vert.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
