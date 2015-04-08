@@ -8,22 +8,6 @@
 #include "ModelList.h"
 #include "File.h"
 
-struct Vert
-{
-    float X;
-    float Y;
-    float Z;
-};
-
-struct VertUV
-{
-    float X;
-    float Y;
-    float Z;
-    float U;
-    float V;
-};
-
 struct VertUVN
 {
     float X;
@@ -46,7 +30,6 @@ struct Face
 class Model : public Node
 {
 public:
-    //void ReadFromFile(const char * const fileName);
     Model();
     virtual ~Model();
 

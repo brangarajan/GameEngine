@@ -83,41 +83,20 @@
     <ClCompile Include="RM_PointLightTexture.cpp">
       <Filter>RenderObjects\PointLightTexture</Filter>
     </ClCompile>
-    <ClCompile Include="BasicConeModel.cpp">
-      <Filter>Models\Basic</Filter>
-    </ClCompile>
-    <ClCompile Include="BasicCubeModel.cpp">
-      <Filter>Models\Basic</Filter>
-    </ClCompile>
-    <ClCompile Include="BasicIcoModel.cpp">
-      <Filter>Models\Basic</Filter>
-    </ClCompile>
-    <ClCompile Include="BasicPyramidModel.cpp">
-      <Filter>Models\Basic</Filter>
-    </ClCompile>
-    <ClCompile Include="TexturedCubeModel.cpp">
-      <Filter>Models\Textured</Filter>
-    </ClCompile>
-    <ClCompile Include="TexturedPyramidModel.cpp">
-      <Filter>Models\Textured</Filter>
-    </ClCompile>
-    <ClCompile Include="PointLightTexturedCube.cpp">
-      <Filter>Models\PointLight</Filter>
-    </ClCompile>
     <ClCompile Include="RO_PointLightTexture.cpp">
       <Filter>RenderObjects\PointLightTexture</Filter>
     </ClCompile>
     <ClCompile Include="CubeModel.cpp">
-      <Filter>Models\Finalized Models</Filter>
+      <Filter>Models\Models</Filter>
     </ClCompile>
     <ClCompile Include="PyramidModel.cpp">
-      <Filter>Models\Finalized Models</Filter>
+      <Filter>Models\Models</Filter>
     </ClCompile>
     <ClCompile Include="ConeModel.cpp">
-      <Filter>Models\Finalized Models</Filter>
+      <Filter>Models\Models</Filter>
     </ClCompile>
     <ClCompile Include="IcoModel.cpp">
-      <Filter>Models\Finalized Models</Filter>
+      <Filter>Models\Models</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -217,16 +196,7 @@
     <Filter Include="RenderObjects\PointLightTexture">
       <UniqueIdentifier>{a0eec41b-f60d-43fc-95fc-23f24d5e6711}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Models\Basic">
-      <UniqueIdentifier>{360398e0-c117-435e-ba26-6016ebc1de33}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Models\Textured">
-      <UniqueIdentifier>{bedc8879-185b-4adf-97b4-bdc52bc8806b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Models\PointLight">
-      <UniqueIdentifier>{de077b90-dacd-43c3-98e4-43201057f933}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Models\Finalized Models">
+    <Filter Include="Models\Models">
       <UniqueIdentifier>{35619e8b-c0ab-4bc3-bbfa-8a9d8a3b2cef}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -360,38 +330,17 @@
     <ClInclude Include="RO_PointLightTexture.h">
       <Filter>RenderObjects\PointLightTexture</Filter>
     </ClInclude>
-    <ClInclude Include="BasicConeModel.h">
-      <Filter>Models\Basic</Filter>
-    </ClInclude>
-    <ClInclude Include="BasicCubeModel.h">
-      <Filter>Models\Basic</Filter>
-    </ClInclude>
-    <ClInclude Include="BasicIcoModel.h">
-      <Filter>Models\Basic</Filter>
-    </ClInclude>
-    <ClInclude Include="BasicPyramidModel.h">
-      <Filter>Models\Basic</Filter>
-    </ClInclude>
-    <ClInclude Include="TexturedCubeModel.h">
-      <Filter>Models\Textured</Filter>
-    </ClInclude>
-    <ClInclude Include="TexturedPyramidModel.h">
-      <Filter>Models\Textured</Filter>
-    </ClInclude>
-    <ClInclude Include="PointLightTexturedCube.h">
-      <Filter>Models\PointLight</Filter>
-    </ClInclude>
     <ClInclude Include="CubeModel.h">
-      <Filter>Models\Finalized Models</Filter>
+      <Filter>Models\Models</Filter>
     </ClInclude>
     <ClInclude Include="PyramidModel.h">
-      <Filter>Models\Finalized Models</Filter>
+      <Filter>Models\Models</Filter>
     </ClInclude>
     <ClInclude Include="ConeModel.h">
-      <Filter>Models\Finalized Models</Filter>
+      <Filter>Models\Models</Filter>
     </ClInclude>
     <ClInclude Include="IcoModel.h">
-      <Filter>Models\Finalized Models</Filter>
+      <Filter>Models\Models</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

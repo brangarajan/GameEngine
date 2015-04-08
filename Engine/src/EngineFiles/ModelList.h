@@ -3,13 +3,6 @@
 
 enum ModelList
 {
-    BasicCone,
-    BasicCube,
-    BasicIco,
-    BasicPyramid,
-    TexturedCube,
-    TexturedPyramid,
-    PtLightTexCube,
     Cube,
     Pyramid,
     Cone,

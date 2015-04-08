@@ -106,13 +106,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BasicConeModel.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="BasicCubeModel.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="CameraManager.cpp" />
     <ClCompile Include="ConeModel.cpp" />
     <ClCompile Include="CubeModel.cpp" />
@@ -120,24 +114,15 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameContent.cpp" />
     <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="BasicIcoModel.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="GameObjectManager.cpp" />
     <ClCompile Include="IcoModel.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="ModelManager.cpp" />
-    <ClCompile Include="PointLightTexturedCube.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="PyramidModel.cpp" />
     <ClCompile Include="RenderObject.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Model.cpp" />
-    <ClCompile Include="BasicPyramidModel.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="RenderMethod.cpp" />
     <ClCompile Include="RM_ColorByPosition.cpp" />
     <ClCompile Include="RM_PointLightTexture.cpp" />
@@ -151,12 +136,6 @@
     <ClCompile Include="RO_Wireframe.cpp" />
     <ClCompile Include="ShaderLoader.cpp" />
     <ClCompile Include="ShaderManager.cpp" />
-    <ClCompile Include="TexturedCubeModel.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="TexturedPyramidModel.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="TextureNode.cpp" />
     <ClCompile Include="TGATexture.h" />
     <ClCompile Include="TextureManager.cpp" />
@@ -171,13 +150,7 @@
     <ClInclude Include="..\..\..\Libs\SB6\include\sb6ext.h" />
     <ClInclude Include="..\..\..\Libs\SB6\include\sb6ktx.h" />
     <ClInclude Include="..\..\..\Libs\SB6\include\sb6mfile.h" />
-    <ClInclude Include="BasicConeModel.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="BasicCubeModel.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="CameraManager.h" />
     <ClInclude Include="ConeModel.h" />
     <ClInclude Include="CubeModel.h" />
@@ -187,9 +160,6 @@
     <ClInclude Include="GameContent.h" />
     <ClInclude Include="GameIncludes.h" />
     <ClInclude Include="GameObject.h" />
-    <ClInclude Include="BasicIcoModel.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="GameObjectManager.h" />
     <ClInclude Include="IcoModel.h" />
     <ClInclude Include="Input.h" />
@@ -199,15 +169,9 @@
     <ClInclude Include="ModelManager.h" />
     <ClInclude Include="Model_Includes.h" />
     <ClInclude Include="Node.h" />
-    <ClInclude Include="PointLightTexturedCube.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="PyramidModel.h" />
     <ClInclude Include="RenderObject.h" />
     <ClInclude Include="Model.h" />
-    <ClInclude Include="BasicPyramidModel.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="RenderMethod.h" />
     <ClInclude Include="RM_ColorByPosition.h" />
     <ClInclude Include="RM_PointLightTexture.h" />
@@ -222,12 +186,6 @@
     <ClInclude Include="RO_Wireframe.h" />
     <ClInclude Include="ShaderLoader.h" />
     <ClInclude Include="ShaderManager.h" />
-    <ClInclude Include="TexturedCubeModel.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="TexturedPyramidModel.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="TextureNode.h" />
   </ItemGroup>

@@ -6,13 +6,4 @@
 #include "ConeModel.h"
 #include "IcoModel.h"
 
-//#include "BasicCubeModel.h"
-//#include "BasicPyramidModel.h"
-//#include "BasicIcoModel.h"
-//#include "BasicConeModel.h"
-//#include "TexturedCubeModel.h"
-//#include "TexturedPyramidModel.h"
-//#include "PointLightTexturedCube.h"
-
-
 #endif
